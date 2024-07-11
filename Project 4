@@ -1,0 +1,26 @@
+//lab 7.17 sort even numbers
+function sortEvens(numArray) {
+    // TODO: Write your solution here
+    //okay so for this part you initialize the function
+   let evenArray = [];
+//then basically you wanna check if the numbers are even
+   for (let num of numArray) {
+      if (num % 2 === 0) {
+        //and then sort them
+         evenArray.push(num);
+      }
+   }
+//then return the function
+   return evenArray;
+
+}
+//I didnt write this part it was already here
+console.log("Testing sortEvens()...");
+let nums = [4, 2, 9, 1, 8];
+//we're sorting what it gave us using the function I wrote
+let evenNums = sortEvens(nums);
+console.log(evenNums);
+
+
+// Do NOT remove the following line:
+export default sortEvens;
